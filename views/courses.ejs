@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Courses Page</h1>
+    <h3><%=data.rand%></h3>
+    <h4><%=data.rand<5?'Data is less than Five':'Data is greater than Five'%></h4>
+    <!-- <%if(data.rand<5){ %>
+        <h3>Data is less than Five</h3>
+    <% }else{%>
+        <h3>Data is Greater than Five</h3>
+    <%}%> -->
+    <p>
+        username: <%=data.username%> 
+    </p>
+    <div>
+        <h3>All Courses</h3>
+        <% for( let index = 0; index < datas.allCourses.length; index++ ) { %>
+        <ul>
+            <li><%=datas.allCourses[index]%></li>
+        </ul>
+        <% } %>
+    </div>
+</body>
+</html>

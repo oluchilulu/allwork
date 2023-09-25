@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('partials/head')%>
+<link rel="stylesheet" href="css\allUser.css">
+<body>
+    
+
+<body>
+    <%-include('partials/navBar')%> 
+    <% for( let index = 0; index < result.length; index++ ) { %>
+        <h3><%=result[index].name%></h3>
+        <a href="/<%=result[index].username%>"> <button>View User</button></a>
+        <hr>
+    <% } %>
+    <script src="allUsers.js"></script>
+</body>
+</html>
+</body>
+</html>
